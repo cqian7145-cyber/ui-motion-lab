@@ -1,6 +1,6 @@
 # Task UI-001 执行报告
 
-- 状态：PARTIAL（本地验收通过，待完成 Git 推送）
+- 状态：PASS
 - 日期：2026-10-28，Asia/Shanghai
 - 本地工作路径：D:\ui-motion-lab\ui-motion-lab
 - 唯一基线：用户已解压的 V0.1；没有重建工程，没有开发 V0.2。
@@ -120,7 +120,14 @@ Morph-Card-{width}.png、Bottom-Sheet-{width}.png；该目录已忽略，不将�
 
 已确认初始无历史且远程为空，git init -b main 并配置用户指定 origin。
 使用现有 Git 身份/凭据；不更改全局身份，不输出 Token，不强制推送。
-正式基线提交/推送记录将在最终回归通过后补全。
+基线 Commit SHA：0c95a58c42c47bf1c3869da9129d9c094c0a3992。
+分支 main，git push -u origin main 成功；git ls-remote origin refs/heads/main
+与本地 SHA 一致。随后仅提交本报告的交付记录更新，最终文档提交见 git log -1。
+提交前审查 47 个暂存文件、git diff --cached --check 与关键源码 diff；
+缓存、依赖、环境变量与密钥文件未入暂存。常见 Token/private-key/带凭据 URL 模式扫描无命中。
+Git 提示 Windows autocrlf 将来可能转换行尾，未更改全局配置；暂存 whitespace 检查通过。
+远程 CI 的即时状态见 https://github.com/cqian7145-cyber/ui-motion-lab/actions 。
+本报告的本地 PASS 以实际 npm run check 与 18/18 浏览器结果为证据。
 
 ## 8. 已知限制与 V0.2 候选
 
