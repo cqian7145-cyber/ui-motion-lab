@@ -1,0 +1,39 @@
+{
+  "name": "ui-motion-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A reusable React motion component studio and live playground.",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "predev": "node scripts/generate-component-sources.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/generate-component-sources.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm run build",
+    "generate:sources": "node scripts/generate-component-sources.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "motion": "^12.23.12",
+    "next": "16.3.5",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0"
+  }
+}

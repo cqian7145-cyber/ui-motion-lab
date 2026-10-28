@@ -1,0 +1,30 @@
+@import "tailwindcss";
+:root { color-scheme:light; --background:#f7f8fc; --foreground:#171d2b; }
+@theme inline { --color-background:var(--background); --color-foreground:var(--foreground); }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:Inter,"Segoe UI",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; -webkit-font-smoothing:antialiased; }
+button, input { font:inherit; }
+button { cursor:pointer; }
+::selection { background:#d9e7ff; color:#1a3264; }
+.lab-shell { min-height:100vh; background:linear-gradient(135deg,#f7f9fd 0%,#fff 45%,#f8faff 100%); }
+.lab-sidebar { width:242px; flex:0 0 242px; border-right:1px solid #edf0f6; background:#fff; position:sticky; top:0; align-self:flex-start; height:100vh; }
+.lab-content { min-width:0; flex:1; }
+.lab-surface { background:white; border:1px solid #e9edf4; border-radius:20px; box-shadow:0 8px 30px rgba(28,45,92,.025); }
+.lab-card { background:#fff; border:1px solid #e9edf4; border-radius:20px; transition:box-shadow .2s ease,border-color .2s ease,transform .2s ease; overflow:hidden; }
+.lab-card:hover { border-color:#cbd8f8; box-shadow:0 16px 46px rgba(38,66,135,.08); transform:translateY(-2px); }
+.preview-grid { background-color:#fbfcff; background-image:radial-gradient(#e8edf7 1px, transparent 1px); background-size:20px 20px; }
+.blue-text { background:linear-gradient(95deg,#2067ee,#7d8afa); background-clip:text; -webkit-text-fill-color:transparent; }
+.lab-pill { border:1px solid #e6e9f1; border-radius:999px; background:#fff; padding:7px 13px; font-size:12px; font-weight:600; color:#5c677b; transition:all .2s; }
+.lab-pill[data-active="true"] { background:#2563eb; color:white; border-color:#2563eb; box-shadow:0 4px 14px rgba(37,99,235,.2); }
+.lab-detail-backdrop { position:fixed; inset:0; background:rgba(18,30,52,.48); backdrop-filter:blur(7px); z-index:70; }
+.lab-detail { position:fixed; right:0; top:0; bottom:0; z-index:80; background:#fff; width:min(740px,100vw); box-shadow:-16px 0 60px rgba(14,20,37,.18); display:flex; flex-direction:column; }
+.code-pane { background:#111827; color:#e4ecff; border-radius:16px; padding:18px; font:12px/1.75 "Cascadia Code",Consolas,monospace; overflow:auto; max-height:440px; white-space:pre; tab-size:2; }
+.range-accent { accent-color:#2563eb; }
+.lab-modal { position:fixed; inset:0; width:100vw; height:100dvh; max-width:none; max-height:none; margin:0; padding:0; border:0; background:transparent; color:inherit; overflow:hidden; }
+.lab-modal::backdrop { background:transparent; }
+.lab-modal button { min-height:24px; min-width:24px; }
+.sidebar-link { display:flex; gap:11px; align-items:center; padding:11px 13px; font-size:13px; font-weight:600; color:#647086; border-radius:12px; transition:all .2s; width:100%; text-align:left; }
+.sidebar-link:hover, .sidebar-link[data-active="true"] { background:#eef4ff; color:#2563eb; }
+@media (max-width:850px) { .lab-sidebar { display:none; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .lab-card { transition:none; } }

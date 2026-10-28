@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "browser": "153.0.8010.12",
+  "url": "http://localhost:3001",
+  "results": [
+    {
+      "name": "gallery-search-categories",
+      "status": "PASS",
+      "evidence": {
+        "Buttons": 2,
+        "Typography": 1,
+        "Cards": 2,
+        "Navigation": 3,
+        "Scroll": 1,
+        "Feedback": 1,
+        "All": 10
+      }
+    },
+    {
+      "name": "motion-button-controls",
+      "status": "PASS",
+      "evidence": {
+        "hover": "matrix(1.05, 0, 0, 1.05, 0, -2.95688)",
+        "tap": "matrix(0.939479, 0, 0, 0.939479, 0, -3.00497)",
+        "spring": [
+          "matrix(1.00969, 0, 0, 1.00969, 0, -0.58148)",
+          "matrix(1.0391, 0, 0, 1.0391, 0, -2.33603)"
+        ]
+      }
+    },
+    {
+      "name": "magnetic-pointer-return",
+      "status": "PASS",
+      "evidence": {
+        "moved": "matrix(1, 0, 0, 1, 14.9446, 0)",
+        "reset": "matrix(1, 0, 0, 1, 0.0023217, 0)"
+      }
+    },
+    {
+      "name": "reveal-replay-speed",
+      "status": "PASS",
+      "evidence": [
+        "matrix(1, 0, 0, 1, 0, 18.4088)",
+        "matrix(1, 0, 0, 1, 0, 1.05931)"
+      ]
+    },
+    {
+      "name": "stagger-list-sequence",
+      "status": "PASS",
+      "evidence": [
+        0.29313,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "animated-tabs-keyboard",
+      "status": "PASS"
+    },
+    {
+      "name": "scroll-reveal-wheel",
+      "status": "PASS",
+      "evidence": {
+        "scroll": 210,
+        "opacity": [
+          "0",
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "Morph Card-modal-keyboard-focus",
+      "status": "PASS"
+    },
+    {
+      "name": "Bottom Sheet-modal-keyboard-focus",
+      "status": "PASS"
+    },
+    {
+      "name": "bottom-sheet-drag-dismiss",
+      "status": "PASS"
+    },
+    {
+      "name": "toast-show-dismiss",
+      "status": "PASS"
+    },
+    {
+      "name": "page-transition-cycle",
+      "status": "PASS"
+    },
+    {
+      "name": "ten-source-usage-clipboard",
+      "status": "PASS",
+      "evidence": [
+        "Motion Button",
+        "Magnetic Button",
+        "Reveal Text",
+        "Morph Card",
+        "Stagger List",
+        "Animated Tabs",
+        "Scroll Reveal",
+        "Bottom Sheet",
+        "Animated Toast",
+        "Page Transition"
+      ]
+    },
+    {
+      "name": "system-reduced-motion-ten-panels",
+      "status": "PASS",
+      "evidence": [
+        "Motion Button",
+        "Magnetic Button",
+        "Reveal Text",
+        "Morph Card",
+        "Stagger List",
+        "Animated Tabs",
+        "Scroll Reveal",
+        "Bottom Sheet",
+        "Animated Toast",
+        "Page Transition"
+      ]
+    },
+    {
+      "name": "responsive-gallery-dialogs-props-four-widths",
+      "status": "PASS",
+      "evidence": [
+        {
+          "viewport": 1440,
+          "scroll": 1440
+        },
+        {
+          "viewport": 768,
+          "scroll": 768
+        },
+        {
+          "viewport": 390,
+          "scroll": 390
+        },
+        {
+          "viewport": 320,
+          "scroll": 320
+        }
+      ]
+    },
+    {
+      "name": "touch-fallback-and-filter",
+      "status": "PASS"
+    },
+    {
+      "name": "settled-idle-layout-sample",
+      "status": "PASS",
+      "evidence": {
+        "LayoutCount": 0,
+        "RecalcStyleCount": 0
+      }
+    },
+    {
+      "name": "runtime-console-errors",
+      "status": "PASS",
+      "evidence": []
+    }
+  ],
+  "errors": []
+}
